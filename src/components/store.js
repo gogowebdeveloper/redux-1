@@ -2,7 +2,7 @@ import { createStore,combineReducers } from 'redux';
 import { createSlice } from '@reduxjs/toolkit';
 
 const counterInitialState={counter:0,showCounter:true}
-const authInitialState={isAuthenticated:false}
+const authInitialState={isAuthenticated:true}
 
 const counterSlice=createSlice({
   name:"counter",
@@ -79,5 +79,4 @@ const rootReducer=combineReducers({
 })
 
 const store = createStore(rootReducer);
-
 export default store;
