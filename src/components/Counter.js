@@ -1,7 +1,7 @@
 import classes from './Counter.module.css';
 import { useDispatch, useSelector} from 'react-redux';
 import hideEye from "../assets/svg/Group.svg"
-import { counterActions } from './store';
+import { counterActions } from './reducer/CountersReducer';
 
 const Counter = () => {
   const dispatch=useDispatch();
